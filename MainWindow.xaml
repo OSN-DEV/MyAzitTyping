@@ -1,0 +1,41 @@
+﻿
+    
+    <Window x:Class="MyAzitTyping.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyAzitTyping"
+        mc:Ignorable="d"
+        Title="AzitTyping" Height="250" Width="400" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" PreviewKeyDown="Window_PreviewKeyDown" TextInput="Window_TextInput">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Component/Generic.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+        
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0">
+            <CheckBox Name="cRandom">問題をランダムで出題(最大３０問)</CheckBox>
+        </StackPanel>
+
+        <StackPanel Grid.Row="0" VerticalAlignment="Center">
+            <TextBlock Name="cKana" HorizontalAlignment="Center" FontSize="40">あ</TextBlock>
+            <TextBlock Name="cKey" HorizontalAlignment="Center" FontSize="30" Margin="0,10,0,0">sss</TextBlock>
+        </StackPanel>
+
+        <Grid Grid.Row="1" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Row="0" Grid.Column="0" Name="cStartStop" Content="Start" Style="{StaticResource LabelButton}"  HorizontalAlignment="Center" Click="StartStop_Click" />
+        </Grid>
+    </Grid>
+</Window>

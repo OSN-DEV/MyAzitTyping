@@ -1,0 +1,72 @@
+﻿z.	…
+z,	‥
+zh	←
+zj	↓
+zk	↑
+zl	→
+z-	〜
+z[	『
+z]	』
+kv	き
+kj	く
+kl	こ
+jv	じゅ
+dv	で
+nf	ぬ
+hv	ふ
+mv	む
+mk	み
+ml	も
+yv	ゆ
+nv	ん
+
+@a	ぁ
+@i	ぃ
+@u	ぅ
+@e	ぇ
+@o	ぉ
+@ka	ヵ
+@ke	ヶ
+@tu	っ
+@ya	ゃ
+@yo	ょ
+@yu	ゅ
+
+ds	で	s
+gs	ぐ	s
+ms	ま	s
+ks	か	s
+rs	ら	s
+ts	と	s
+ws	わ	s
+
+kr	か	r
+cr	く	r
+gr	ぐ	r
+sr	す	r
+tr	と	r
+nr	な	r
+dr	ど	r
+fr	ふ	r
+pr	ぷ	r
+mr	ま	r
+yr	よ	r
+wr	わ	r
+rr	ら	r
+
+gt	ご	t
+kt	こ	t
+mt	ま	t
+wt	わ	t
+
+dk	で	k
+sk	し	k
+tk	と	k
+wk	わ	k
+
+ca	ちゃ
+co	ちょ
+cu	ちゅ
+ch	ちょう
+cv	ちょう
+cw	ちゅう
