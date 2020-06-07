@@ -10,9 +10,9 @@ z]	』
 kv	き
 kj	く
 kl	こ
-jv	じゅ
 dv	で
 nf	ぬ
+n;	の
 hv	ふ
 mv	む
 mk	み
@@ -52,7 +52,6 @@ pr	ぷ	r
 mr	ま	r
 yr	よ	r
 wr	わ	r
-rr	ら	r
 
 gt	ご	t
 kt	こ	t
@@ -65,8 +64,129 @@ tk	と	k
 wk	わ	k
 
 ca	ちゃ
-co	ちょ
 cu	ちゅ
-ch	ちょう
-cv	ちょう
+co	ちょ
 cw	ちゅう
+cv	ちょう
+
+cs	くす
+sc	すく
+st	すと
+ck	っく
+rk	ーく
+rt	ーと
+
+b;	ぶ
+c;	っく
+d;	っど
+f;	ふ
+g;	っぐ
+h;	う
+k;	っく
+l;	る
+m;	む
+p;	っぷ
+q;	っく
+z;	ず
+
+b.	ぶ。
+d.	だ。
+g.	ぐ。
+k.	く。
+m.	む。
+n.	ん。
+r.	る。
+s.	す。
+t.	た。
+v.	ぶ。
+
+d,	で、
+g,	が、
+h,	は、
+t,	て、
+	
+vw	びゅー
+
+dy	だい
+
+gf	がい
+gv	ぎょう
+gl	げい
+gm	ぐん
+gd	げん
+gh	ごう
+gn	がん
+
+hf	はい
+hn	はん
+hb	ほん
+hg	ひん
+hl	へい
+
+jh	じょう
+jn	じゃん
+jm	じゅん
+jv	じょう
+jw	じゅう
+jy	じゃい
+
+kf	かい
+kn	かん
+kg	きん
+kb	こん
+kd	けん
+km	くん
+kh	こう
+ky	かい
+
+xw	しゅう
+xv	しょう
+
+my	まい
+mn	まん
+mg	みん
+mb	もん
+md	めん
+mh	もう
+
+la	りゃ
+lu	りゅ
+lo	りょ
+lh	りょう
+
+qa	きゃ
+qn	きゃん
+qu	きゅ
+qw	きゅう
+qo	きょ
+qv	きょう
+
+sf	さい
+sn	さん
+sg	しん
+sm	すん
+sl	せい
+sd	せん
+sh	そう
+sb	そん
+
+tf	たい
+tn	たん
+tg	ちん
+tw	つう
+tm	つん
+tl	てい
+td	てん
+tb	とん
+
+xa	しゃ
+xu	しゅ
+xo	しょ
+xm	しゅん
+
+yh	よう
+
+zf	ざい
+zd	ぜん
+zb	ぞん
+zg	じん
