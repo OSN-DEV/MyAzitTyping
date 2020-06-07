@@ -9,6 +9,7 @@ namespace MyAzitTyping.Data {
 
         #region Public Property
         public bool IsRandom30 { set; get; } = false;
+        public bool ShowRomaji { set; get; } = false;
         #endregion
 
         #region Public Method

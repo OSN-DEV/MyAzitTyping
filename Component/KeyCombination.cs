@@ -37,12 +37,13 @@ namespace MyAzitTyping.Component {
         /// <summary>
         /// set key combination
         /// </summary>
-        /// <param name="combination"></param>
-        public void Set(string combination) {
+        /// <param name="keys"></param>
+        /// <param name="showRomaji"></param>
+        public void Set(string keys, bool showRomaji) {
             this._keys.Clear();
-            for(int i=0; i < combination.Length;i++) {
-                var r = new Run(combination.Substring(i, 1).ToLower());
-                r.Foreground = TextColor.None;
+            for(int i=0; i < keys.Length;i++) {
+                var r = new Run(keys.Substring(i, 1).ToLower());
+                r.Foreground = showRomaji? TextColor.Off : TextColor.None;
                 this._keys.Add(r);
             }
             this._index = 0;

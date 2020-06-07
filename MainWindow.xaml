@@ -24,6 +24,7 @@
 
         <StackPanel Grid.Row="0">
             <CheckBox Name="cRandom">問題をランダムで出題(最大３０問)</CheckBox>
+            <CheckBox Name="cShowRomaji" Margin="0,5,0,0">ローマ字を表示</CheckBox>
         </StackPanel>
 
         <StackPanel Grid.Row="0" VerticalAlignment="Center">

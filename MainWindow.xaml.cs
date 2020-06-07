@@ -1,21 +1,9 @@
 ﻿using MyAzitTyping.AppUtil;
 using MyAzitTyping.Component;
 using MyAzitTyping.Data;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace MyAzitTyping {
     /// <summary>
@@ -54,7 +42,11 @@ namespace MyAzitTyping {
             }
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Window_TextInput(object sender, TextCompositionEventArgs e) {
             if (this._isPracticeMode) {
                 e.Handled = true;
@@ -101,6 +93,7 @@ namespace MyAzitTyping {
             // restore settings
             var settings = AppRepository.Init(Constants.SettingFile);
             this.cRandom.IsChecked = settings.IsRandom30;
+            this.cShowRomaji.IsChecked = settings.ShowRomaji;
 
             // others
             this._keyCombination.Complete += this.CompleteQuestion;
@@ -114,6 +107,7 @@ namespace MyAzitTyping {
         /// </summary>
         private void SetScreenWithMode() {
             this.cRandom.Visibility = this._isPracticeMode ? Visibility.Hidden : Visibility.Visible;
+            this.cShowRomaji.Visibility = this._isPracticeMode ? Visibility.Hidden : Visibility.Visible;
             this.cKana.Visibility = this._isPracticeMode ? Visibility.Visible : Visibility.Hidden;
             this.cKey.Visibility = this._isPracticeMode ? Visibility.Visible : Visibility.Hidden;
             this.cStartStop.Content = this._isPracticeMode ? "Stop" : "Start";
@@ -125,6 +119,7 @@ namespace MyAzitTyping {
         private void StartPractice() {
             var settings = AppRepository.GetInstance();
             settings.IsRandom30 = (true == this.cRandom.IsChecked);
+            settings.ShowRomaji = (true == this.cShowRomaji.IsChecked);
             settings.Save();
 
             this._romanTable.Reset(settings.IsRandom30);
@@ -153,7 +148,7 @@ namespace MyAzitTyping {
                 return false;
             }
             this.cKana.Text = kana;
-            this._keyCombination.Set(key);
+            this._keyCombination.Set(key, AppRepository.GetInstance().ShowRomaji);
             this.cKey.Inlines.Clear();
             foreach (var r in this._keyCombination.Keys) {
                 this.cKey.Inlines.Add(r);
