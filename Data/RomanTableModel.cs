@@ -58,7 +58,7 @@ namespace MyAzitTyping.Data {
             }
             int index;
             if (_isRandom) {
-                index = this._rnd.Next(this._count);
+                index = this._rnd.Next(this._kanas.Count);
             } else {
                 index = this._index;
             }
