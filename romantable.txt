@@ -45,7 +45,6 @@ cr	く	r
 gr	ぐ	r
 sr	す	r
 tr	と	r
-nr	な	r
 dr	ど	r
 fr	ふ	r
 pr	ぷ	r
